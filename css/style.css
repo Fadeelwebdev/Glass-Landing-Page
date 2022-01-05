@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+h1{
+    color: #436696;
+    font-weight: 600;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+h2,
+p
+{
+    color: #436696;
+    font-weight: 500;
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+h3{
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+main{
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, 
+    #6fdfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    border-radius: 2rem;
+    border: 1px solid rgb(126, 126, 173);
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),
+     rgba(255,255,255,0.3)
+     );
+     z-index: 2;
+     backdrop-filter: blur(2rem);
+     display: flex;
+}
+.circle1,.circle2{
+    background: white; 
+    background: linear-gradient(to left bottom, rgba(255,255,255,0.8),rgba(255,255,255,0.5));
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top: 5%;
+    border-radius: 50%;
+    
+}
+
+.circle1{
+    right: 17%;
+    top: 7%;
+}
+.circle2{
+    top: 80%;
+    left: 17%;    
+}
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom,rgba(255,255,255,1),
+    rgba(255,255,255,0.5)
+    );
+    border-radius: 2rem;
+    
+}
+.user img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.user{
+    font-size: 0.5rem;
+    font-weight: 700;
+}
+.user p{
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.pro{
+    font-size: 0.4rem;
+}
+.link{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 0.5rem 0rem; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 0rem; 
+}
+
+.link img{
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+}
+
+.link h2{
+    font-size: 0.7rem;
+    padding: 0rem 0.5rem;
+}
+.games{
+    flex: 2;
+}
+.pro{
+    background: linear-gradient(to right top, 
+    #6fdfc9, #6cdbeb);
+    margin-top:5rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    position: relative;
+}
+.pro img{
+    position: absolute;
+}
+.pro h2{
+    font-size:10px ;
+    color: white;
+    font-weight: 600;
+}
+
+/* .games\ */
+.status{
+    margin-bottom: 3rem;
+}
+
+.status input{
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.7),
+    rgba(255,255,255,0.3)
+    );
+    border: none;
+    width: 70%;
+    padding: 0.1rem;
+    border-radius: 1rem;
+}
+.games{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+    
+}
+.card{
+    display: flex;
+    background: linear-gradient(to left top, rgba(255,255,255,0.8),
+    rgba(255,255,255,0.5)
+    );
+    border-radius: 0.4rem;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+    justify-content: space-between;
+}
+.progress{
+    background: linear-gradient(to right top, 
+    #6fdfc9, #6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 236, 236);
+    position: absolute;
+    left: 60%;  
+}
+.percentage{
+    font-weight: bold;
+    background: linear-gradient(to right top, 
+    #6fdfc9, #6cdbeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
